@@ -4,6 +4,8 @@
 
 Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to reduce repetitive work by using simple commands and the power of multiple cursors in JetBrains IDEs.
 
+[Get from Marketplace](https://plugins.jetbrains.com/plugin/20961-txtic) or [Releases](https://github.com/asmoker/txtic/releases).
+
 **Default shortcut: `ctrl + alt + X`.**
 
 ## Commands
