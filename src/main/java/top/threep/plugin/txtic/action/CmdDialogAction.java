@@ -13,6 +13,7 @@ import com.intellij.openapi.util.text.Strings;
 import org.jetbrains.annotations.NotNull;
 import top.threep.plugin.txtic.cmd.Cmd;
 import top.threep.plugin.txtic.cmd.CmdFactory;
+import top.threep.plugin.txtic.ui.BalloonNotifier;
 import top.threep.plugin.txtic.ui.CustomMessagesImpl;
 
 import java.util.List;
@@ -39,17 +40,21 @@ public class CmdDialogAction extends AnAction {
         Document document = editor.getDocument();
         WriteCommandAction.runWriteCommandAction(project, () -> {
             List<Caret> carets = caretModel.getAllCarets();
-            for (Caret caret : carets) {
-                int start = caret.getSelectionStart();
-                int end = caret.getSelectionEnd();
-                String text = caret.getSelectedText();
-                if (Strings.isEmpty(text)) {
-                    text = "";
+            try {
+                for (Caret caret : carets) {
+                    int start = caret.getSelectionStart();
+                    int end = caret.getSelectionEnd();
+                    String text = caret.getSelectedText();
+                    if (Strings.isEmpty(text)) {
+                        text = "";
+                    }
+                    String result = cmd.run(text);
+                    document.replaceString(start, end, result);
+                    caret.removeSelection();
+                    caret.moveToOffset(start + result.length());
                 }
-                String result = cmd.run(text);
-                document.replaceString(start, end, result);
-                caret.removeSelection();
-                caret.moveToOffset(start + result.length());
+            } catch (Exception e) {
+                BalloonNotifier.notifyError(project, e.getMessage());
             }
         });
     }

@@ -8,6 +8,9 @@ Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to 
 
 **Default shortcut: `ctrl + alt + X`.**
 
+[![Watch the video](https://i.ytimg.com/vi/_6i-GI5SZaY/hqdefault.jpg)](https://www.youtube.com/watch?v=_6i-GI5SZaY)
+
+
 ## Commands
 
 - `r`/`range`: incremental numbers
