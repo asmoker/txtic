@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "top.threep.plugin"
-version = "0.1.0"
+version = "0.2.0"
 
 repositories {
     mavenCentral()
@@ -28,7 +28,7 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("221")
+        sinceBuild.set("203.*")
         untilBuild.set("231.*")
     }
 
