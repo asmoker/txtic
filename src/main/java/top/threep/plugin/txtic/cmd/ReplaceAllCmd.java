@@ -5,7 +5,7 @@ import com.intellij.openapi.util.text.Strings;
 public class ReplaceAllCmd implements Cmd {
     private String regex;
     private String replacement;
-    private boolean optionsIsValid;
+    private final boolean optionsIsValid;
 
     public ReplaceAllCmd(String options) {
         if (Strings.isEmpty(options)) {

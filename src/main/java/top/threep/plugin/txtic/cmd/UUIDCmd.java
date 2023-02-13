@@ -3,8 +3,8 @@ package top.threep.plugin.txtic.cmd;
 import java.util.UUID;
 
 public class UUIDCmd implements Cmd {
-    private String separator;
-    private boolean isUpperCase;
+    private final String separator;
+    private final boolean isUpperCase;
 
     public UUIDCmd(boolean isUpperCase, String options) {
         this.isUpperCase = isUpperCase;
