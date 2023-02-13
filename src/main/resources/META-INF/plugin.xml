@@ -15,7 +15,6 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    <h1>Txtic</h1>
     <p>
         Txtic is a plugin for JetBrains IDEs dedicated to reduce repetitive work by using simple commands and the power of multiple cursors in JetBrains IDEs. <br/>
         <b>Default shortcut: <code>ctrl + alt + X</code></b>
@@ -43,11 +42,11 @@
        <li>Add error notifier</li>
        <li>Add compatible versions</li>
     </ul>
-
+    <br/>
     <strong>0.1.0 - 2023-01-31 Initial release</strong>
 
     <br/>
-    <a href="https://github.com/asmoker/txtic/blob/master/CHANGELOG.textile" target="_blank">Read full changelog on GitHub</a>
+    <a href="https://github.com/asmoker/txtic/blob/master/CHANGELOG.md" target="_blank">Read full changelog on GitHub</a>
     ]]></change-notes>
 
     <!-- Product and plugin compatibility requirements.
