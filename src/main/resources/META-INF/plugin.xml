@@ -6,7 +6,7 @@
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>Txtic</name>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="blog.smoker.cc@gmail.com" url="https://github.com/asmoker">asmoker</vendor>
@@ -15,7 +15,6 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    <h1>Txtic</h1>
     <p>
         Txtic is a plugin for JetBrains IDEs dedicated to reduce repetitive work by using simple commands and the power of multiple cursors in JetBrains IDEs. <br/>
         <b>Default shortcut: <code>ctrl + alt + X</code></b>
@@ -23,6 +22,8 @@
     <h2>Commands</h2>
     <ul>
         <li>r/range: incremental numbers</li>
+        <li>a: a to z</li>
+        <li>A: A to Z</li>
         <li>uuid: generate uuid(lower case)</li>
         <li>UUID: generate UUID(upper case)</li>
         <li>l/lower: to lower case</li>
@@ -38,16 +39,21 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <strong>0.3.0 - 2023-02-15</strong>
+    <ul>
+       <li>Added command `a` and `A`</li>
+    </ul>
+    <br/>
     <strong>0.2.0 - 2023-02-09</strong>
     <ul>
-       <li>Add error notifier</li>
-       <li>Add compatible versions</li>
+       <li>Added error notifier</li>
+       <li>Added compatible versions</li>
     </ul>
-
+    <br/>
     <strong>0.1.0 - 2023-01-31 Initial release</strong>
 
     <br/>
-    <a href="https://github.com/asmoker/txtic/blob/master/CHANGELOG.textile" target="_blank">Read full changelog on GitHub</a>
+    <a href="https://github.com/asmoker/txtic/blob/master/CHANGELOG.md" target="_blank">Read full changelog on GitHub</a>
     ]]></change-notes>
 
     <!-- Product and plugin compatibility requirements.

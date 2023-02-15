@@ -3,7 +3,7 @@ package top.threep.plugin.txtic.cmd;
 import com.intellij.openapi.util.text.Strings;
 
 public class DeleteFirstCmd implements Cmd {
-    private String regex;
+    private final String regex;
 
     public DeleteFirstCmd(String regex) {
         this.regex = regex;

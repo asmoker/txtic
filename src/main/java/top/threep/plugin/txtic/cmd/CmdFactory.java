@@ -5,6 +5,10 @@ import com.intellij.openapi.util.text.Strings;
 public class CmdFactory {
     private static Cmd getCmd(String cmd, String options) {
         switch (cmd) {
+            case "a":
+                return new CharRangeCmd(false, options);
+            case "A":
+                return new CharRangeCmd(true, options);
             case "UUID":
                 return new UUIDCmd(true, options);
             case "uuid":

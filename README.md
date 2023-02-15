@@ -14,6 +14,8 @@ Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to 
 ## Commands
 
 - `r`/`range`: incremental numbers
+- `a`: a to z
+- `A`: A to Z
 - `uuid`: generate uuid(lower case)
 - `UUID`: generate UUID(upper case)
 - `l`/`lower`: to lower case

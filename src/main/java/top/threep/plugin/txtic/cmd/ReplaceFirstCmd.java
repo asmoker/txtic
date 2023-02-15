@@ -5,7 +5,7 @@ import com.intellij.openapi.util.text.Strings;
 public class ReplaceFirstCmd implements Cmd {
     private String regex;
     private String replacement;
-    private boolean optionsIsValid;
+    private final boolean optionsIsValid;
 
     public ReplaceFirstCmd(String options) {
         if (Strings.isEmpty(options)) {

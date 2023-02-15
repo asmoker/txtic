@@ -3,10 +3,11 @@ package top.threep.plugin.txtic.cmd;
 import com.intellij.openapi.util.text.Strings;
 import org.jetbrains.annotations.Nullable;
 
-public class NumberRangeCmd implements Cmd {
-    private int start = 1;
+public class CharRangeCmd implements Cmd {
+    private static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    private int start = 0;
     private int step = 1;
-    private Integer padding;
+    private boolean isUpperCase;
 
     private @Nullable Integer toInt(String text) {
         try {
@@ -16,7 +17,15 @@ public class NumberRangeCmd implements Cmd {
         }
     }
 
-    public NumberRangeCmd(String options) {
+    public static int getIdx(int value) {
+        if (value < 0) {
+            value = (Math.abs(value) / 26 + 1) * 26 + value;
+        }
+        return value % 26;
+    }
+
+    public CharRangeCmd(boolean isUpperCase, String options) {
+        this.isUpperCase = isUpperCase;
         if (Strings.isEmpty(options)) {
             return;
         }
@@ -33,18 +42,16 @@ public class NumberRangeCmd implements Cmd {
                 this.step = value;
             }
         }
-        if (optionsList.length >= 3) {
-            this.padding = toInt(optionsList[2]);
-        }
     }
 
     private String next() {
         int value = this.start;
         this.start = this.start + this.step;
-        if (this.padding != null && this.padding > 1) {
-            return String.format("%0" + this.padding + "d", value);
+        String ch = String.valueOf(alphabet.charAt(getIdx(value)));
+        if (this.isUpperCase) {
+            return ch.toUpperCase();
         }
-        return String.valueOf(value);
+        return ch;
     }
 
     @Override
