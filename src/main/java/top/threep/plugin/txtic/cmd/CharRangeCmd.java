@@ -5,7 +5,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class CharRangeCmd implements Cmd {
     private static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
-    private int start = 1;
+    private int start = 0;
     private int step = 1;
     private boolean isUpperCase;
 
@@ -17,7 +17,15 @@ public class CharRangeCmd implements Cmd {
         }
     }
 
+    public static int getIdx(int value) {
+        if (value < 0) {
+            value = (Math.abs(value) / 26 + 1) * 26 + value;
+        }
+        return value % 26;
+    }
+
     public CharRangeCmd(boolean isUpperCase, String options) {
+        this.isUpperCase = isUpperCase;
         if (Strings.isEmpty(options)) {
             return;
         }
@@ -34,13 +42,12 @@ public class CharRangeCmd implements Cmd {
                 this.step = value;
             }
         }
-        this.isUpperCase = isUpperCase;
     }
 
     private String next() {
         int value = this.start;
         this.start = this.start + this.step;
-        String ch = String.valueOf(alphabet.charAt(value % alphabet.length()));
+        String ch = String.valueOf(alphabet.charAt(getIdx(value)));
         if (this.isUpperCase) {
             return ch.toUpperCase();
         }
