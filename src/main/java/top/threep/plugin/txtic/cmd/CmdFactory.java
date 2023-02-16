@@ -34,6 +34,9 @@ public class CmdFactory {
             case "r":
             case "range":
                 return new NumberRangeCmd(options);
+            case "p":
+            case "paste":
+                return new PasteCmd(options);
             default:
                 return null;
         }
