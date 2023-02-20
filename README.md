@@ -2,6 +2,12 @@
 
 # Txtic
 
+[![Version](https://img.shields.io/jetbrains/plugin/v/20961.svg)](https://plugins.jetbrains.com/plugin/20961)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/20961.svg)](https://plugins.jetbrains.com/plugin/20961)
+![](https://img.shields.io/github/issues-closed/asmoker/txtic)
+![](https://img.shields.io/github/issues/asmoker/txtic)
+![](https://img.shields.io/jetbrains/plugin/r/rating/20961)
+
 Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to reduce repetitive work by using simple commands and the power of multiple cursors in JetBrains IDEs.
 
 [Get from Marketplace](https://plugins.jetbrains.com/plugin/20961-txtic) or [Releases](https://github.com/asmoker/txtic/releases).
