@@ -2,14 +2,24 @@
 
 # Txtic
 
-Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to reduce repetitive work by using simple commands and the power of multiple cursors in JetBrains IDEs.
+[![Version](https://img.shields.io/jetbrains/plugin/v/20961.svg)](https://plugins.jetbrains.com/plugin/20961)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/20961.svg)](https://plugins.jetbrains.com/plugin/20961)
+![](https://img.shields.io/github/issues-closed/asmoker/txtic)
+![](https://img.shields.io/github/issues/asmoker/txtic)
+![](https://img.shields.io/jetbrains/plugin/r/rating/20961)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Get from Marketplace](https://plugins.jetbrains.com/plugin/20961-txtic) or [Releases](https://github.com/asmoker/txtic/releases).
+<a href="https://www.producthunt.com/posts/txtic?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-txtic" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=379809&theme=light" alt="txtic - Text magic command for code | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to reduce repetitive work by using simple
+commands and the power of multiple cursors in JetBrains IDEs.
+
+[Get from Marketplace](https://plugins.jetbrains.com/plugin/20961-txtic)
+or [Releases](https://github.com/asmoker/txtic/releases).
 
 **Default shortcut: `ctrl + alt + X`.**
 
 [![Watch the video](https://i.ytimg.com/vi/_6i-GI5SZaY/hqdefault.jpg)](https://www.youtube.com/watch?v=_6i-GI5SZaY)
-
 
 ## Commands
 
@@ -24,10 +34,12 @@ Txtic is a plugin for [JetBrains IDEs](https://www.jetbrains.com/) dedicated to 
 - `da`/`del_all`: delete all specified str
 - `rf`/`rep_first`: replace first specified str
 - `ra`/`rep_all`: replace all specified str
+- `p`/`paste`: paste the first line of text from the clipboard
 
 ## Wiki
 
-If you would like to know more about how Txtic can help you out, check out our [wiki](https://github.com/asmoker/txtic/wiki).
+If you would like to know more about how Txtic can help you out, check out
+our [wiki](https://github.com/asmoker/txtic/wiki).
 
 ## Changelog
 

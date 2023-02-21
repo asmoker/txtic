@@ -6,7 +6,7 @@
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>Txtic</name>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="blog.smoker.cc@gmail.com" url="https://github.com/asmoker">asmoker</vendor>
@@ -32,6 +32,7 @@
         <li>da/del_all: delete all specified str</li>
         <li>rf/rep_first: replace first specified str</li>
         <li>ra/rep_all: replace all specified str</li>
+        <li>p/paste: paste the first line of text from the clipboard</li>
     </ul>
 
     <h2>Wiki</h2>
@@ -39,9 +40,14 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <strong>0.4.0 - 2023-02-21</strong>
+    <ul>
+       <li>Added command p/paste</li>
+    </ul>
+    <br/>
     <strong>0.3.0 - 2023-02-15</strong>
     <ul>
-       <li>Added command `a` and `A`</li>
+       <li>Added command a and A</li>
     </ul>
     <br/>
     <strong>0.2.0 - 2023-02-09</strong>
