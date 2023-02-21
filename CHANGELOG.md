@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.4.0 - 2023-02-21**
+
+- Added command `p`/`paste`
+
 **0.3.0 - 2023-02-15**
 
 - Added command `a` and `A`

@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
-import java.util.regex.Pattern;
 
 public class PasteCmd implements Cmd {
     private String separator = " ";
@@ -17,7 +16,6 @@ public class PasteCmd implements Cmd {
         if (!Strings.isEmpty(options)) {
             this.separator = options;
         }
-        this.separator = Pattern.quote(this.separator);
         this.initContents();
     }
 
