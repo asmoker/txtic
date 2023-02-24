@@ -37,6 +37,9 @@ public class CmdFactory {
             case "p":
             case "paste":
                 return new PasteCmd(options);
+            case "rp":
+            case "repeat":
+                return new RepeatCmd(options);
             default:
                 return null;
         }

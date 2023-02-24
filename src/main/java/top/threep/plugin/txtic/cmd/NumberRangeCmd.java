@@ -1,20 +1,13 @@
 package top.threep.plugin.txtic.cmd;
 
 import com.intellij.openapi.util.text.Strings;
-import org.jetbrains.annotations.Nullable;
+
+import static top.threep.plugin.txtic.util.NumberUtil.toInt;
 
 public class NumberRangeCmd implements Cmd {
     private int start = 1;
     private int step = 1;
     private Integer padding;
-
-    private @Nullable Integer toInt(String text) {
-        try {
-            return Integer.parseInt(text);
-        } catch (Exception e) {
-            return null;
-        }
-    }
 
     public NumberRangeCmd(String options) {
         if (Strings.isEmpty(options)) {
