@@ -1,21 +1,14 @@
 package top.threep.plugin.txtic.cmd;
 
 import com.intellij.openapi.util.text.Strings;
-import org.jetbrains.annotations.Nullable;
+
+import static top.threep.plugin.txtic.util.NumberUtil.toInt;
 
 public class CharRangeCmd implements Cmd {
     private static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
     private int start = 0;
     private int step = 1;
     private boolean isUpperCase;
-
-    private @Nullable Integer toInt(String text) {
-        try {
-            return Integer.parseInt(text);
-        } catch (Exception e) {
-            return null;
-        }
-    }
 
     public static int getIdx(int value) {
         if (value < 0) {

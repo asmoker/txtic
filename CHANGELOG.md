@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.5.0 - 2023-02-24**
+
+- Added command `rp`/`repeat`
+
 **0.4.0 - 2023-02-21**
 
 - Added command `p`/`paste`

@@ -35,6 +35,7 @@ or [Releases](https://github.com/asmoker/txtic/releases).
 - `rf`/`rep_first`: replace first specified str
 - `ra`/`rep_all`: replace all specified str
 - `p`/`paste`: paste the first line of text from the clipboard
+- `rp`/`repeat`: repeat str
 
 ## Wiki
 
