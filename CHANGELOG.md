@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.5.1 - 2023-02-27**
+
+- Fixed compatibility problems
+
 **0.5.0 - 2023-02-24**
 
 - Added command `rp`/`repeat`
