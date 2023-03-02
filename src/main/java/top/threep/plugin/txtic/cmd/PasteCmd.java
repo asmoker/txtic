@@ -1,6 +1,7 @@
 package top.threep.plugin.txtic.cmd;
 
-import com.jgoodies.common.base.Strings;
+
+import com.intellij.openapi.util.text.Strings;
 
 import java.awt.*;
 import java.awt.datatransfer.DataFlavor;

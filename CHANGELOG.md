@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.5.2 - 2023-03-02**
+
+- Removed unnecessary dependencies
+
 **0.5.1 - 2023-02-27**
 
 - Fixed compatibility problems
