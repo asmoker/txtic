@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "top.threep.plugin"
-version = "0.5.1"
+version = "0.5.2"
 
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ intellij {
     version.set("2022.1.4")
     type.set("IC") // Target IDE Platform
 
-    plugins.set(listOf("java"))
+    plugins.set(listOf())
 }
 
 tasks {
