@@ -40,6 +40,8 @@ public class CmdFactory {
             case "rp":
             case "repeat":
                 return new RepeatCmd(options);
+            case "pangu":
+                return new PanguCmd();
             default:
                 return null;
         }
