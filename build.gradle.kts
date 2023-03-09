@@ -4,10 +4,13 @@ plugins {
 }
 
 group = "top.threep.plugin"
-version = "0.5.2"
+version = "0.6.0"
 
 repositories {
     mavenCentral()
+}
+dependencies {
+    implementation("ws.vinta:pangu:1.1.0")
 }
 
 // Configure Gradle IntelliJ Plugin

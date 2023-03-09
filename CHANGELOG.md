@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.6.0 - 2023-03-09**
+
+- Added command `pangu`
+
 **0.5.2 - 2023-03-02**
 
 - Removed unnecessary dependencies
