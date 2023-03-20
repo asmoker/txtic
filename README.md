@@ -53,6 +53,10 @@ See https://github.com/asmoker/txtic/blob/master/CHANGELOG.md
 - [Text-Pastry](https://github.com/duydao/Text-Pastry): Extend the power of multiple selections in Sublime Text.
 - [Pangu.java](https://github.com/vinta/pangu.java): Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean), half-width English, digit and symbol characters.
 
+## Special thanks:
+
+- [JetBrains](https://www.jetbrains.com/buy/opensource/) for providing us with All Products Pack licenses.
+
 ## License
 
 The MIT License (MIT)
