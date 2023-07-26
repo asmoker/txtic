@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.6.1 - 2023-07-26**
+
+- Fixed compatibility problems
+
 **0.6.0 - 2023-03-09**
 
 - Added command `pangu`
