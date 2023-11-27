@@ -6,7 +6,7 @@
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>Txtic</name>
-    <version>0.6.1</version>
+    <version>0.7.0</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="blog.smoker.cc@gmail.com" url="https://github.com/asmoker">asmoker</vendor>
@@ -35,6 +35,7 @@
         <li>p/paste: paste the first line of text from the clipboard</li>
         <li>rp/repeat: repeat str</li>
         <li>pangu: beautify text</li>
+        <li>p2m: convert method parameters to map(<b>useful for Python</b>)</li>
     </ul>
 
     <h2>Wiki</h2>
@@ -42,6 +43,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <strong>0.7.0 - 2023-11-27</strong>
+    <ul>
+        <li>Added command p2m</li>
+    </ul>
+    <br/>
     <strong>0.6.1 - 2023-07-26</strong>
     <ul>
        <li>Fixed compatibility problems</li>

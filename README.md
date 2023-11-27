@@ -37,6 +37,7 @@ or [Releases](https://github.com/asmoker/txtic/releases).
 - `p`/`paste`: paste the first line of text from the clipboard
 - `rp`/`repeat`: repeat str
 - `pangu`: beautify text
+- `p2m`: convert method parameters to map(**useful for Python**)
 
 ## Wiki
 
@@ -51,7 +52,8 @@ See https://github.com/asmoker/txtic/blob/master/CHANGELOG.md
 
 - [Camel Case](https://github.com/netnexus/camelcaseplugin): CamelCasePlugin for IDEA IDEs.
 - [Text-Pastry](https://github.com/duydao/Text-Pastry): Extend the power of multiple selections in Sublime Text.
-- [Pangu.java](https://github.com/vinta/pangu.java): Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean), half-width English, digit and symbol characters.
+- [Pangu.java](https://github.com/vinta/pangu.java): Paranoid text spacing for good readability, to automatically insert
+  whitespace between CJK (Chinese, Japanese, Korean), half-width English, digit and symbol characters.
 
 ## Special thanks:
 

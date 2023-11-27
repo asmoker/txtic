@@ -42,6 +42,8 @@ public class CmdFactory {
                 return new RepeatCmd(options);
             case "pangu":
                 return new PanguCmd();
+            case "p2m":
+                return new Param2MapCmd(options);
             default:
                 return null;
         }
