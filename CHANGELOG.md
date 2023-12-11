@@ -1,5 +1,13 @@
 # Txtic - Changelog
 
+**0.7.1 - 2023-12-11**
+
+- Fixed compatibility problems
+
+**0.7.0 - 2023-11-27**
+
+- Added command p2m
+
 **0.6.1 - 2023-07-26**
 
 - Fixed compatibility problems

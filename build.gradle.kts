@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "top.threep.plugin"
-version = "0.7.0"
+version = "0.7.1"
 
 repositories {
     mavenCentral()
@@ -20,6 +20,7 @@ intellij {
     type.set("IC") // Target IDE Platform
 
     plugins.set(listOf())
+    updateSinceUntilBuild.set(false)
 }
 
 tasks {
@@ -32,7 +33,6 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("203.*")
-        untilBuild.set("232.*")
     }
 
     signPlugin {
