@@ -44,6 +44,8 @@ public class CmdFactory {
                 return new PanguCmd();
             case "p2m":
                 return new Param2MapCmd(options);
+            case "myip":
+                return new MyIPCmd();
             default:
                 return null;
         }

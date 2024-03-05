@@ -38,6 +38,7 @@ or [Releases](https://github.com/asmoker/txtic/releases).
 - `rp`/`repeat`: repeat str
 - `pangu`: beautify text
 - `p2m`: convert method parameters to map(**useful for Python**)
+- `myip`: get my public IP address(**network required**)
 
 ## Wiki
 
