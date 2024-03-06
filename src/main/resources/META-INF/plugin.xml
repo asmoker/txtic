@@ -36,7 +36,7 @@
         <li>rp/repeat: repeat str</li>
         <li>pangu: beautify text</li>
         <li>p2m: convert method parameters to map(<b>useful for Python</b>)</li>
-        <li>myip: get my public IP address(**network required**)</li>
+        <li>myip: get my public IP address(<b>network required</b>)</li>
     </ul>
 
     <h2>Wiki</h2>
