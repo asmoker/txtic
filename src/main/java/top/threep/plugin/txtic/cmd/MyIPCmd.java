@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MyIPCmd implements Cmd {
+
     public MyIPCmd() {
     }
 
@@ -14,6 +15,9 @@ public class MyIPCmd implements Cmd {
         try {
             URL url = new URL("https://ip.threep.top");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            int timeout = 3000; // in ms
+            conn.setConnectTimeout(timeout);
+            conn.setReadTimeout(timeout);
             conn.setRequestMethod("GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;

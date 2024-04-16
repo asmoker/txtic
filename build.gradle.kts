@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "top.threep.plugin"
-version = "0.8.0"
+version = "0.8.1"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("203.*")
+        sinceBuild.set("203")
     }
 
     signPlugin {

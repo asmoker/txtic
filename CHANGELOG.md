@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.8.1 - 2024-04-16**
+
+- Fixed compatibility problems
+
 **0.8.0 - 2024-03-05**
 
 - Added command myip

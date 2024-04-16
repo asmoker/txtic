@@ -8,7 +8,7 @@ public class CharRangeCmd implements Cmd {
     private static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
     private int start = 0;
     private int step = 1;
-    private boolean isUpperCase;
+    private final boolean isUpperCase;
 
     public static int getIdx(int value) {
         if (value < 0) {

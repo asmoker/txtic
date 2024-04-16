@@ -1,12 +1,12 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-<idea-plugin url="https://github.com/asmoker/txtic">
+<idea-plugin url="https://github.com/asmoker/txtic" require-restart="false">
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>top.threep.plugin.txtic</id>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>Txtic</name>
-    <version>0.8.0</version>
+    <version>0.8.1</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="blog.smoker.cc@gmail.com" url="https://github.com/asmoker">asmoker</vendor>
@@ -44,6 +44,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <strong>0.8.1 - 2024-04-16</strong>
+    <ul>
+        <li>Fixed compatibility problems</li>
+    </ul>
+    <br/>
     <strong>0.8.0 - 2024-03-05</strong>
     <ul>
         <li>Added command myip</li>
