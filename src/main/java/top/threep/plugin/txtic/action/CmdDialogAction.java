@@ -10,6 +10,7 @@ import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.text.Strings;
+import com.intellij.psi.PsiFile;
 import org.jetbrains.annotations.NotNull;
 import top.threep.plugin.txtic.cmd.Cmd;
 import top.threep.plugin.txtic.cmd.CmdFactory;
@@ -29,7 +30,12 @@ public class CmdDialogAction extends AnAction {
         }
 
         // Get process cmd instance
-        Cmd cmd = CmdFactory.get(input);
+        PsiFile psiFile = event.getData(CommonDataKeys.PSI_FILE);
+        String extension = "";
+        if (psiFile != null) {
+            extension = psiFile.getVirtualFile().getExtension();
+        }
+        Cmd cmd = CmdFactory.get(input, extension);
         if (cmd == null) {
             return;
         }

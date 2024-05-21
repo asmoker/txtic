@@ -3,7 +3,7 @@ package top.threep.plugin.txtic.cmd;
 import com.intellij.openapi.util.text.Strings;
 
 public class CmdFactory {
-    private static Cmd getCmd(String cmd, String options) {
+    private static Cmd getCmd(String cmd, String options, String extension) {
         switch (cmd) {
             case "a":
                 return new CharRangeCmd(false, options);
@@ -46,12 +46,14 @@ public class CmdFactory {
                 return new Param2MapCmd(options);
             case "myip":
                 return new MyIPCmd();
+            case "carbon":
+                return new CarbonCmd(extension);
             default:
                 return null;
         }
     }
 
-    public static Cmd get(String input) {
+    public static Cmd get(String input, String extension) {
         if (Strings.isEmpty(input)) {
             return null;
         }
@@ -67,6 +69,6 @@ public class CmdFactory {
             options = input.substring(idx + 1);
         }
 
-        return getCmd(cmd, options);
+        return getCmd(cmd, options, extension);
     }
 }

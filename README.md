@@ -39,6 +39,7 @@ or [Releases](https://github.com/asmoker/txtic/releases).
 - `pangu`: beautify text
 - `p2m`: convert method parameters to map(**useful for Python**)
 - `myip`: get my public IP address(**network required**)
+- `carbon`: open the selected code in https://carbon.now.sh(**support custom url**)
 
 ## Wiki
 
@@ -55,6 +56,7 @@ See https://github.com/asmoker/txtic/blob/master/CHANGELOG.md
 - [Text-Pastry](https://github.com/duydao/Text-Pastry): Extend the power of multiple selections in Sublime Text.
 - [Pangu.java](https://github.com/vinta/pangu.java): Paranoid text spacing for good readability, to automatically insert
   whitespace between CJK (Chinese, Japanese, Korean), half-width English, digit and symbol characters.
+- [idea-carbon-now-sh](https://github.com/trubitsyn/idea-carbon-now-sh): IntelliJ IDEA plugin to open the selected code in https://carbon.now.sh
 
 ## Special thanks:
 

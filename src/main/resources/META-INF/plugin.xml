@@ -6,7 +6,7 @@
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>Txtic</name>
-    <version>0.8.1</version>
+    <version>0.9.0</version>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="blog.smoker.cc@gmail.com" url="https://github.com/asmoker">asmoker</vendor>
@@ -37,6 +37,7 @@
         <li>pangu: beautify text</li>
         <li>p2m: convert method parameters to map(<b>useful for Python</b>)</li>
         <li>myip: get my public IP address(<b>network required</b>)</li>
+        <li>carbon: open the selected code in https://carbon.now.sh(<b>support custom url</b>)</li>
     </ul>
 
     <h2>Wiki</h2>
@@ -44,6 +45,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <strong>0.9.0 - 2024-05-21</strong>
+    <ul>
+        <li>Added command carbon</li>
+    </ul>
+    <br/>
     <strong>0.8.1 - 2024-04-16</strong>
     <ul>
         <li>Fixed compatibility problems</li>
@@ -119,6 +125,7 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <notificationGroup id="Txtic Notifier Group" displayType="BALLOON"/>
+        <applicationConfigurable instance="top.threep.plugin.txtic.conf.TxticConfigUI" displayName="Txtic Settings"/>
     </extensions>
     <actions>
         <action id="top.threep.plugin.txtic.action.CmdDialogAction"
