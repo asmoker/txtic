@@ -17,7 +17,7 @@
 package top.threep.plugin.txtic.cmd;
 
 import com.intellij.ide.BrowserUtil;
-import com.jgoodies.common.base.Strings;
+import com.intellij.openapi.util.text.Strings;
 import top.threep.plugin.txtic.carbon.Languages;
 import top.threep.plugin.txtic.conf.TxticConfig;
 
