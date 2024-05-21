@@ -39,7 +39,7 @@ or [Releases](https://github.com/asmoker/txtic/releases).
 - `pangu`: beautify text
 - `p2m`: convert method parameters to map(**useful for Python**)
 - `myip`: get my public IP address(**network required**)
-- `carbon`: open the selected code in https://carbon.now.sh(**support custom url**)
+- `carbon`: open the selected code in https://carbon.now.sh (**support custom url**)
 
 ## Wiki
 
