@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.9.2 - 2024-10-15**
+
+- Fixed compatibility problems
+
 **0.9.0 - 2024-05-21**
 
 - Added command carbon

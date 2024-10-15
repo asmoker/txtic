@@ -41,7 +41,10 @@ public class CmdDialogAction extends AnAction {
         }
 
         // Append cmd result
-        final Editor editor = event.getRequiredData(CommonDataKeys.EDITOR);
+        final Editor editor = event.getData(CommonDataKeys.EDITOR);
+        if (editor == null) {
+            return;
+        }
         final CaretModel caretModel = editor.getCaretModel();
         Document document = editor.getDocument();
         WriteCommandAction.runWriteCommandAction(project, () -> {

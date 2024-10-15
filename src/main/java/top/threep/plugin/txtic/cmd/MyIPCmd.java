@@ -1,9 +1,10 @@
 package top.threep.plugin.txtic.cmd;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.time.Duration;
 
 public class MyIPCmd implements Cmd {
 
@@ -11,25 +12,23 @@ public class MyIPCmd implements Cmd {
     }
 
     private String getMyIP() {
-        StringBuilder result = new StringBuilder();
         try {
-            URL url = new URL("https://ip.threep.top");
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            int timeout = 3000; // in ms
-            conn.setConnectTimeout(timeout);
-            conn.setReadTimeout(timeout);
-            conn.setRequestMethod("GET");
-            BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String line;
-            while ((line = br.readLine()) != null) {
-                result.append(line);
+            HttpResponse<String> response = HttpClient.newHttpClient().send(
+                    HttpRequest.newBuilder()
+                            .uri(URI.create("https://ip.threep.top"))
+                            .timeout(Duration.ofSeconds(3))
+                            .GET()
+                            .build(),
+                    HttpResponse.BodyHandlers.ofString()
+            );
+            if (response.statusCode() == 200) {
+                return response.body();
+            } else {
+                return "";
             }
-            br.close();
         } catch (Exception e) {
             return "";
         }
-        return result.toString().strip();
-
     }
 
     @Override
