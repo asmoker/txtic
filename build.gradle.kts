@@ -30,8 +30,8 @@ intellijPlatform {
         name = "txtic"
         version = "0.9.3"
         ideaVersion {
-            sinceBuild = "203"
-            untilBuild = "242.*"
+            sinceBuild = "222"
+            untilBuild = "243.*"
         }
     }
     publishing {
