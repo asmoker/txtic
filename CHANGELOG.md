@@ -1,5 +1,9 @@
 # Txtic - Changelog
 
+**0.9.3 - 2024-12-17**
+
+- Fixed compatibility problems
+
 **0.9.2 - 2024-10-15**
 
 - Fixed compatibility problems

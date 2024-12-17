@@ -1,47 +1,51 @@
+group = "top.threep.plugin"
+version = "0.9.3"
+
 plugins {
     id("java")
-    id("org.jetbrains.intellij") version "1.13.0"
+    id("org.jetbrains.intellij.platform") version "2.1.0"
 }
-
-group = "top.threep.plugin"
-version = "0.9.2"
-
 repositories {
     mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
 }
+
 dependencies {
     implementation("ws.vinta:pangu:1.1.0")
+
+    intellijPlatform {
+        intellijIdeaCommunity("2022.3.1", useInstaller = false)
+        bundledPlugin("com.intellij.java")
+
+        pluginVerifier()
+        zipSigner()
+        instrumentationTools()
+    }
+}
+intellijPlatform {
+    pluginConfiguration {
+        id = "top.threep.plugin.txtic"
+        name = "txtic"
+        version = "0.9.3"
+        ideaVersion {
+            sinceBuild = "203"
+            untilBuild = "242.*"
+        }
+    }
+    publishing {
+        host = "https://plugins.jetbrains.com"
+        token.set(System.getenv("PUBLISH_TOKEN"))
+        channels = listOf("default")
+    }
 }
 
-// Configure Gradle IntelliJ Plugin
-// Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
-intellij {
-    version.set("2022.1.4")
-    type.set("IC") // Target IDE Platform
-
-    plugins.set(listOf())
-    updateSinceUntilBuild.set(false)
-}
 
 tasks {
-    // Set the JVM compatibility versions
     withType<JavaCompile> {
-        sourceCompatibility = "11"
-        targetCompatibility = "11"
+        sourceCompatibility = JavaVersion.VERSION_17.toString()
+        targetCompatibility = JavaVersion.VERSION_17.toString()
         options.encoding = "UTF-8"
-    }
-
-    patchPluginXml {
-        sinceBuild.set("203")
-    }
-
-    signPlugin {
-        certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
-        privateKey.set(System.getenv("PRIVATE_KEY"))
-        password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
-    }
-
-    publishPlugin {
-        token.set(System.getenv("PUBLISH_TOKEN"))
     }
 }

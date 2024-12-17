@@ -1,5 +1,6 @@
 package top.threep.plugin.txtic.action;
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -20,6 +21,11 @@ import top.threep.plugin.txtic.ui.CustomMessagesImpl;
 import java.util.List;
 
 public class CmdDialogAction extends AnAction {
+    @Override
+    public @NotNull ActionUpdateThread getActionUpdateThread() {
+        return ActionUpdateThread.BGT;
+    }
+
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
         Project project = event.getProject();
